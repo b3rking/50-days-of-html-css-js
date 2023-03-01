@@ -14,3 +14,47 @@ html {
 h1 {
     text-align: center;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.panel {
+    margin: 0 10px;
+    border-radius: 100px;
+    padding: 0 10px;
+    height: 80vh;
+    width: 8.5%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s;
+}
+
+h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    display: none;
+    color: white;
+}
+
+.active {
+    width: 70%;
+}
+
+.active > h3 {
+    display: block;
+}
